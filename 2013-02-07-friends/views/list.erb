@@ -1,0 +1,40 @@
+<div class="span12">
+  <div class="page-header">
+    <h1>My Friends!</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="span12">
+
+
+
+      <% if @rows.count == 0 %>
+      <div class="nofriends"><h1>"You have no friends!"<h1></div>
+      <div class="nofriends"><img src="/images/samuel-l-jackson.jpg" /></div>
+      <% end %>
+      <% @rows.each do |row| %>
+      <div class="row friend_row">
+        <div class="span2">
+          <img class="faces" src="<%= row['image'] %>" width="100" height="100" alt="Face" />
+        </div>
+        <div class="span10">
+          <div class="byline">
+            <div class="name">
+              <%= row['name'] %></div>
+              <div><%= row['age'] %>, <%= row['gender'] %></div>
+          <div class="by-links">
+            <ul>
+              <li><a href="<%= row['twitter'] %>" target="_blank"><img src="/images/glyphicons_free/glyphicons/png/glyphicons_411_twitter.png" /></a></li>
+              <li><a href="<%= row['github'] %>" target="_blank"><img src="/images/glyphicons_free/glyphicons/png/glyphicons_401_github.png" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+   <% end %>
+
+
+
+
+</div>
+</div>

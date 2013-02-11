@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <link href='http://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Ruby code
+      looks for calc.erb, inserts
+      what's in calc.erb in this block.
+      Equals sign indicates its output
+      is printed on the HTML page.
+    -->
+    <div id="result">
+    <%= yield %>
+  </div>
+  </body>
+</html>

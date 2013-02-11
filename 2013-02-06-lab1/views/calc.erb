@@ -1,0 +1,22 @@
+
+<div id="result_box">
+<h1>CALCULATOR</h1>
+<!-- from within this file -- make it an
+  instance variable -->
+
+<form action='/calc' method='get'>
+  <input type="text" name="first"/>
+  <select>
+    <option name='+'>+</option>
+    <option name='+'>-</option>
+    <option name='+'>/</option>
+    <option name='+'>*</option>
+  </select>
+  <input type="text" name="operator"/>
+  <input type="text" name="second"/>
+  <button>Calculate!</button>
+</form>
+<span class="number"><%= @first %></span> <%= @operator %>
+<span class="number"><%= @second %></span> equals
+  <span class="number"><%= @result %>
+</div>

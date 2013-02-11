@@ -1,0 +1,44 @@
+
+/* Hero Unit Override */
+.face {
+  background: url('/images/blue_happy_face.jpg') no-repeat center;
+  color: #fff;
+  text-shadow: 2px 2px 1px #000;
+}
+
+.bkgrd {
+  background-color: rgb(25,172,240);
+}
+
+.bkgrd-smile {
+  background: url('/images/smile-happy-yellow-face.jpg') no-repeat center;
+  padding-top: 10px;
+}
+
+.bkgrd-friends {
+  background: url('/images/friends-fingers.jpeg') repeat-y center;
+
+}
+
+.by-links ul li {
+  display: inline;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.faces {
+  padding: 20px;
+}
+
+.nofriends {
+  display: block;
+  float: left;
+  font-size: 36px;
+  font-weight: bold;
+  border: 1px solid red;
+  width: 450px;
+}
